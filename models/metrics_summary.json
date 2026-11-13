@@ -1,0 +1,25 @@
+{
+  "dataset": "MovieLens 1M",
+  "n_users": 6040,
+  "n_items": 3667,
+  "sparsity": 0.964,
+  "models": {
+    "Truncated_SVD": {
+      "Precision@10": 0.08844994978239036,
+      "NDCG@10": 0.10478554834770094,
+      "evaluated_users": 5974,
+      "train_time_sec": 0.433
+    },
+    "ALS_Implicit": {
+      "Precision@10": 0.08987278205557415,
+      "NDCG@10": 0.10926908387480143,
+      "evaluated_users": 5974,
+      "train_time_sec": 0.672
+    }
+  },
+  "cpp_benchmark_all_pairs_top10": {
+    "pure_python_sec": 23.78,
+    "cpp_pybind11_sec": 0.4298,
+    "speedup_x": 55.3
+  }
+}
